@@ -1,4 +1,4 @@
-package com.zmo.dbconnect.entity;
+package com.zmo.dbconnect.entities;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
