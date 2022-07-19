@@ -1,17 +1,14 @@
-package com.zmo.dbconnect.entities;
+package com.zmo.dbconnect.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import javax.persistence.*;
 import java.sql.Timestamp;
 
+@Data
+@Builder
 @AllArgsConstructor
 @NoArgsConstructor
-@Getter
-@Setter
 @Entity(name = "Actor")
 @Table(name="Actor")
 public class Actor {
@@ -29,10 +26,4 @@ public class Actor {
 
     @Column(name = "last_update", nullable = false, columnDefinition = "timestamp")
     private Timestamp lastUpdate;
-
-    public Actor(String firstName, String lastName, Timestamp lastUpdate) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.lastUpdate = lastUpdate;
-    }
 }
