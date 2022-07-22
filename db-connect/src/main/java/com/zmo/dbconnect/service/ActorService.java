@@ -2,7 +2,7 @@ package com.zmo.dbconnect.service;
 
 import com.zmo.dbconnect.controller.ActorRegistrationRequest;
 import com.zmo.dbconnect.model.Actor;
-import com.zmo.dbconnect.repositories.ActorRepository;
+import com.zmo.dbconnect.repository.ActorRepository;
 import org.springframework.stereotype.Service;
 
 import java.sql.Timestamp;

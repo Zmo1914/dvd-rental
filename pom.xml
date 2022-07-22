@@ -6,6 +6,7 @@
 
     <modules>
         <module>db-connect</module>
+        <module>fraud</module>
     </modules>
 
     <parent>
