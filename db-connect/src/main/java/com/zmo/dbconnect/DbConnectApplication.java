@@ -1,5 +1,6 @@
 package com.zmo.dbconnect;
 
+import com.ulisesbocchio.jasyptspringboot.annotation.EnableEncryptableProperties;
 import com.zmo.dbconnect.model.Actor;
 import com.zmo.dbconnect.repository.ActorRepository;
 import org.springframework.boot.CommandLineRunner;
@@ -10,6 +11,7 @@ import org.springframework.context.annotation.Bean;
 import java.util.List;
 
 @SpringBootApplication
+@EnableEncryptableProperties
 public class DbConnectApplication {
     public static void main(String[] args) {
         SpringApplication.run(DbConnectApplication.class, args);
