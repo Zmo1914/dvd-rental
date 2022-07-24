@@ -9,4 +9,6 @@ import java.util.List;
 public interface ActorRepository extends JpaRepository<Actor, Integer> {
 
     List<Actor> findByFirstName(String firstName);
+
+    Actor findActorById(Integer id);
 }
