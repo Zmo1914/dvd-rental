@@ -1,5 +1,6 @@
 package com.zmo.dbconnect.controller;
 
+import com.zmo.dbconnect.dto.ActorDto;
 import com.zmo.dbconnect.service.ActorService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
@@ -10,8 +11,8 @@ import org.springframework.web.bind.annotation.*;
 public record ActorController(ActorService actorService) {
 
     @PostMapping
-    public void registerActor(@RequestBody ActorRegistrationRequest actorRegistrationRequest){
-        log.info("Actor registration {}", actorRegistrationRequest);
-        actorService.registerActor(actorRegistrationRequest);
+    public void registerActor(@RequestBody ActorDto actorDto){
+        log.info("Actor registration {}", actorDto);
+        actorService.registerActor(actorDto);
     }
 }
